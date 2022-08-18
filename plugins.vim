@@ -25,5 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'rakr/vim-one'
     Plug 'sonph/onehalf', { 'rtp': 'vim' }
     " auto complete
-    Plug 'maxboisvert/vim-simple-complete'
+    Plug 'maxboisvert/vim-simple-complete' 
+    " lazygit via neovim
+    Plug 'kdheepak/lazygit.nvim', { 'branch': 'nvim-v0.4.3' }
 call plug#end()
