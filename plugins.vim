@@ -18,8 +18,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     " search file ctrl P
-    Plug 'kien/ctrlp.vim'
-    "Ag search
     Plug 'rking/ag.vim'
     " theme
     Plug 'rakr/vim-one'
@@ -28,4 +26,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'maxboisvert/vim-simple-complete' 
     " lazygit via neovim
     Plug 'kdheepak/lazygit.nvim', { 'branch': 'nvim-v0.4.3' }
+
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'ryanoasis/vim-devicons'
+
+    Plug 'vim-syntastic/syntastic'
+    Plug 'ngmy/vim-rubocop'
+
+    Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
