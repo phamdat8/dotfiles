@@ -1,0 +1,16 @@
+AllCops:
+  Include:
+    - app/**/*.rb
+    - spec/**/*.rb
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Max: 50
+Metrics/AbcSize:
+  Max: 50

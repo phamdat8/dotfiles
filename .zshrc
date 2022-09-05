@@ -29,4 +29,6 @@ eval "$(rbenv init -)"
 alias lg='lazygit'
 alias fe='cd ~/work-space/vendor_portal_frontend'
 alias be='cd ~/work-space/vendor_portal_ror'
-alias v='nvim .'
+alias v='nvim'
+
+[[ -s "/home/datpt/.gvm/scripts/gvm" ]] && source "/home/datpt/.gvm/scripts/gvm"

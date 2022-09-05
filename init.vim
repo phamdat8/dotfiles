@@ -5,7 +5,7 @@ let g:vimrubocop_config = '~/work-space/dotfiles/rubocop/rubocop.yml'
 let g:vimrubocop_keymap = 0
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+set statusline+=%F
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -39,12 +39,11 @@ inoremap <c-s> <Esc>:w<CR>
 nnoremap q :q<CR>
 nnoremap <c-q> :q<CR>
 
-
 nnoremap <F3> :LazyGit<CR>
 nnoremap <Tab> <c-w>w
 let NERDTreeMapActivateNode='o'
 "let NERDTreeMapCustomOpen='f'
-let NERDTreeCustomOpenArgs={'file':{'where': 'v', 'keepopen': '1', 'stay': '1'}, 'dir':{}}
+let NERDTreeCustomOpenArgs={'file':{'where': 'v', 'keepopen': '1', 'stay': '0'}, 'dir':{}}
 let NERDTreeMapCustomOpen='f'
 " Telescope
 
