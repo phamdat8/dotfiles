@@ -21,7 +21,8 @@ ts.setup {
     'scss',
     'dockerfile',
     'cpp',
-    'html'
+    'html',
+    'javascript'
   },
   autotag = {
     enable = true,

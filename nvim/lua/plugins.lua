@@ -10,7 +10,6 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use 'EdenEast/nightfox.nvim' -- Theme nightfox
   use 'hoob3rt/lualine.nvim' -- Statusline
   use 'neovim/nvim-lspconfig' -- LSP
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
@@ -50,4 +49,5 @@ packer.startup(function(use)
   }) 
   use 'kdheepak/lazygit.vim'
   use 'joshdick/onedark.vim'
+  use 'alvan/vim-closetag'
 end)

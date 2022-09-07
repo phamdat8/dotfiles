@@ -16,5 +16,6 @@ keymap.set('', '<A-s>', ':w<Return>')
 keymap.set('i', 'jj', '<Esc>')
 keymap.set('n', '<space>', ':')
 keymap.set('n', 'q', ':q<Return>')
+keymap.set('', '<F1>', '<Esc>')
 
 keymap.set('', '<F3>', ':LazyGit<Return>')
