@@ -29,8 +29,11 @@ eval "$(rbenv init -)"
 alias lg='lazygit'
 alias fe='cd ~/work-space/vendor_portal_frontend'
 alias be='cd ~/work-space/vendor_portal_ror'
+alias abi_fe='cd ~/play-ground/abigail_web'
+alias abi_be='cd ~/play-ground/abigail_app'
 alias v='nvim'
 alias q='exit'
 
 [[ -s "/home/datpt/.gvm/scripts/gvm" ]] && source "/home/datpt/.gvm/scripts/gvm"
-[[ $TERM != "screen" ]] && exec tmux
+unsetopt INTERACTIVE_COMMENTS
+unsetopt BAD_PATTERN

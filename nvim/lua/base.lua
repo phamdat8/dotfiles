@@ -29,7 +29,8 @@ vim.opt.wrap = false -- No wrap lines
 vim.opt.backspace = 'start,eol,indent'
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
- 
+vim.opt.guifont = { 'Monospaced comic sans' }
+vim.opt.clipboard = 'unnamedplus'
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
@@ -45,4 +46,13 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 vim.opt.formatoptions:append { 'r' }
 
 -- Call theme
-vim.cmd("colorscheme onedark")
+vim.cmd([[
+  colorscheme onedark
+  let b:ale_linters = ['eslint']
+  let g:ale_fix_on_save = 1
+  let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
+]])
+

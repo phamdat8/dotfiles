@@ -49,5 +49,9 @@ packer.startup(function(use)
   }) 
   use 'kdheepak/lazygit.vim'
   use 'joshdick/onedark.vim'
-  use 'alvan/vim-closetag'
+  use 'voldikss/vim-browser-search'
+  use 'tyru/open-browser.vim'
+  use 'aklt/plantuml-syntax'
+  use 'weirongxu/plantuml-previewer.vim'
+  use 'dense-analysis/ale'
 end)
