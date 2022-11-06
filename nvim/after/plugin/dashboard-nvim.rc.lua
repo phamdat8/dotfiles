@@ -1,5 +1,7 @@
+  local status, db = pcall(require, "dashboard")
+  if (not status) then return end
+
   local home = os.getenv('HOME')
-  local db = require('dashboard')
   db.preview_file_height = 11
   db.preview_file_width = 70
   db.custom_center = {
@@ -8,7 +10,7 @@
 
       {desc = ' Find  File                              ',
       shortcut = 'Alt p'},
-    
+
       {desc = ' Find  word                              ',
       shortcut = 'Alt f'},
 
@@ -30,7 +32,7 @@
     [[⢑⢕⠃⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⢕⢕⢕]],
     [[⣆⢕⠄⢱⣄⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢁⢕⢕⠕⢁]],
     [[⣿⣦⡀⣿⣿⣷⣶⣬⣍⣛⣛⣛⡛⠿⠿⠿⠛⠛⢛⣛⣉⣭⣤⣂⢜⠕⢑⣡⣴⣿]],
-  } 
+  }
 
   db.custom_footer = {
     [[Roses are red, violets are blue]],
