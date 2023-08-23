@@ -29,8 +29,8 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use {
-    'akinsho/bufferline.nvim', 
-    tag = "v2.*", 
+    'akinsho/bufferline.nvim',
+    tag = "v2.*",
     requires = 'kyazdani42/nvim-web-devicons'
   }
   use 'norcalli/nvim-colorizer.lua'
@@ -46,7 +46,7 @@ packer.startup(function(use)
   use ({
     'iamcco/markdown-preview.nvim',
     run = function() vim.fn["mkdp#util#install"]() end,
-  }) 
+  })
   use 'kdheepak/lazygit.vim'
   use 'joshdick/onedark.vim'
   use 'voldikss/vim-browser-search'
@@ -54,4 +54,11 @@ packer.startup(function(use)
   use 'aklt/plantuml-syntax'
   use 'weirongxu/plantuml-previewer.vim'
   use 'dense-analysis/ale'
+  use 'apzelos/blamer.nvim'
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+    }
 end)

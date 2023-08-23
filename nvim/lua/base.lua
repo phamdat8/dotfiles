@@ -48,6 +48,7 @@ vim.opt.formatoptions:append { 'r' }
 -- Call theme
 vim.cmd([[
   colorscheme onedark
+  let g:blamer_enabled = 1
   let b:ale_linters = ['eslint']
   let g:ale_fix_on_save = 1
   let g:ale_fixers = {
@@ -55,4 +56,3 @@ vim.cmd([[
 \   'javascript': ['eslint'],
 \}
 ]])
-

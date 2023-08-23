@@ -33,6 +33,10 @@ alias abi_fe='cd ~/play-ground/abigail_web'
 alias abi_be='cd ~/play-ground/abigail_app'
 alias v='nvim'
 alias q='exit'
+alias dirsearch='python3 ~/dirsearch/dirsearch.py'
+alias m='mysql -u datpt -p123456 vendor_portal_ror_development'
+alias my='~/my.sql'
+
 
 [[ -s "/home/datpt/.gvm/scripts/gvm" ]] && source "/home/datpt/.gvm/scripts/gvm"
 unsetopt INTERACTIVE_COMMENTS
