@@ -26,3 +26,5 @@ keymap.set("n", "2", ":cd ~/work-space/MIMS_FE<Return>")
 keymap.set("n", "tn", ":tabnew<Return>")
 keymap.set("n", "tj", ":tabprevious<Return>")
 keymap.set("n", "tk", ":tabnext<Return>")
+
+vim.api.nvim_set_keymap("n", "<A-f>", ":lua SearchWordUnderCursor()<CR>", { noremap = true, silent = true })
