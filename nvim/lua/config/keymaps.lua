@@ -26,5 +26,7 @@ keymap.set("n", "2", ":cd ~/work-space/MIMS_FE<Return>")
 keymap.set("n", "tn", ":tabnew<Return>")
 keymap.set("n", "tj", ":tabprevious<Return>")
 keymap.set("n", "tk", ":tabnext<Return>")
+keymap.set("n", "<A-i>", '<CMD>lua require("FTerm").toggle()<CR>')
+keymap.set("t", "<A-i>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 vim.api.nvim_set_keymap("n", "<A-f>", ":lua SearchWordUnderCursor()<CR>", { noremap = true, silent = true })
