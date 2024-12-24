@@ -8,7 +8,7 @@ return {
     opts = function()
       local dashboard = require("alpha.themes.dashboard")
 
-      dashboard.config.layout[2] = require("art").pixels("bee")
+      dashboard.config.layout[2] = require("art").pixels("pvz/peashooter")
       dashboard.section.buttons.val = {}
 
       dashboard.section.footer.val = require("calendar").getCalendar()
